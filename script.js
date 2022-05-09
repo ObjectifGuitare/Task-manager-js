@@ -109,5 +109,13 @@ function toggleModal(){
 }
 
 
-/*drag and drop*/
+/*switch*/
+const upcoming = document.querySelector('.Upcoming');
+const progress = document.querySelector('.pregress')
 
+mouv.addEventListener('click',mouv)
+function change(){
+    let mouv = document.getElementsByClassName('click');
+    
+
+}

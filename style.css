@@ -46,7 +46,7 @@ section{
     margin: 10px;
     
 }
-.status{
+.click{
     text-align: end;
     padding: 1px;
 }
@@ -135,6 +135,9 @@ h2{
 }
 .modal-btn:hover{
     font-size: 20px;
+}
+h3{
+    font-size: 30px;
 }
 
 /*drag and drop*/
