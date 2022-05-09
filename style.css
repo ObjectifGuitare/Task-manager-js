@@ -1,0 +1,141 @@
+body{
+    display: flex;
+    width: 1080px;
+    background-color: bisque;
+
+}
+
+
+header{
+    position:absolute;
+
+}
+h1{
+    font-size: 300%;
+    
+}
+
+
+
+main{
+    display: flex;
+    padding-top: 15%;
+    
+    
+    
+    
+}
+.case{
+    display: flex;
+    position:relative;
+}
+
+section{
+    width: 790px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center; 
+    margin: 1%;
+    
+}
+
+.Project{
+    background-color: white;
+    border-radius: 10px;
+    margin: 10px;
+    
+}
+.status{
+    text-align: end;
+    padding: 1px;
+}
+
+h2{
+    font-size: 200%;
+    text-align: left;
+}
+
+.Upcoming{
+    background-color:rgb(209, 205, 205);
+    border: 1px solid ;
+}
+.Progress{
+    background-color: rgb(209, 205, 205);
+    border: 1px solid;
+}
+.Done{
+    background-color: rgb(209, 205, 205);
+    border: 1px solid;
+}
+
+
+
+
+
+
+/*modal*/
+
+.modal-container{
+    display: none;
+    position: fixed;
+    top: 0;
+    width: 100vh;
+    height: 100vh;
+}
+.modal-container.active{
+    display: block;
+}
+.overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #333333d3;
+}
+.modal{
+    width: 95%;
+    max-width: 500px;
+    min-width: 300px;
+    padding: 30px;
+    background: #fff;
+    border-radius: 5px;
+    position: absolute;
+    top:40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.close-modal{
+    padding: 8px 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    position: absolute;
+    top:18px;
+    right: 10px;
+    cursor: pointer;
+    background: #ff365e;
+    color: #fff;
+}
+
+.modal h3{
+    margin-bottom: 10px;
+    
+}
+
+.modal p{
+    margin-bottom: 10px;
+}
+.modal-btn{
+    border: 1px;
+    text-align: left;
+    font-size: 15px;
+    background-color: rgb(209, 205, 205);
+    
+}
+.modal-btn:hover{
+    font-size: 20px;
+}
+
+/*drag and drop*/
+
