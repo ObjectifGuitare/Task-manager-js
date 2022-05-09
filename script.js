@@ -5,24 +5,33 @@ let tasks = [
         status: "upcoming",
         name: "me gratter le dos",
         description: "utiliser mon gratte dos pour me gratter le dos afin de me gratter le dos",
-        date: "bite"
+        date: "2022-12-25"
     },
     {
         status: "done",
         name: "me gratter le ventre",
         description: "utiliser mon gratte ventre pour me gratter le ventre afin de me gratter le ventre",
-        date: "bite"
+        date: "2022-05-30"
     },
     {
         status: "doing",
         name: "me gratter le menton",
         description: "utiliser mon gratte menton pour me gratter le menton afin de me gratter le menton",
-        date: "bite"
+        date: "2024-01-07"
     }
 ]
 
 
+function formatDate(unpolishedDate)
+{
+    let days = 0;
+    let currentDate = new Date();
+    let currentEpochDays = currentDate.getTime() / (1000 * 60 * 60 * 24);
 
+    if(days < 2)
+        return `${days} day left`;
+    return `${days} days left`;
+}
 
 function displayTasks(arr)
 {
@@ -41,6 +50,7 @@ function displayTasks(arr)
         h.innerHTML = task.name;
         more.innerHTML = task.description;
         dueDate.innerHTML = task.date;
+        dueDate.innerHTML = formatDate(task.date);
         // will have to transform this date in a function
         
         if (task.status === "upcoming"){
