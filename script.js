@@ -11,7 +11,7 @@ let tasks = [
         status: "done",
         name: "me gratter le ventre",
         description: "utiliser mon gratte ventre pour me gratter le ventre afin de me gratter le ventre",
-        date: "2022-05-30"
+        date: "2022-05-10"
     },
     {
         status: "doing",
@@ -24,9 +24,11 @@ let tasks = [
 
 function formatDate(unpolishedDate)
 {
-    let days = 0;
     let currentDate = new Date();
-    let currentEpochDays = currentDate.getTime() / (1000 * 60 * 60 * 24);
+    let currentEpoch = currentDate.getTime() 
+    let futureDate = new Date(unpolishedDate);
+    let futureEpoch = futureDate.getTime();
+    let days = Math.ceil((futureEpoch - currentEpoch) / (1000 * 60 * 60 * 24));
 
     if(days < 2)
         return `${days} day left`;
