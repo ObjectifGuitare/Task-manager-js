@@ -56,13 +56,13 @@ function displayTasks(arr)
         // will have to transform this date in a function
         
         if (task.status === "upcoming"){
-            document.body.querySelector(".Upcoming").appendChild(figure);
+            document.body.querySelector(".UpcomingProject").appendChild(figure);
         }
         else if (task.status === "done"){
-            document.body.querySelector(".Done").appendChild(figure);
+            document.body.querySelector(".DoneProject").appendChild(figure);
         }
         else if (task.status === "doing"){
-            document.body.querySelector(".Progress").appendChild(figure);
+            document.body.querySelector(".ProgressProject").appendChild(figure);
         }
     }
 }
