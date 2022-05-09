@@ -1,6 +1,6 @@
 body{
     display: flex;
-    width: 1080px;
+    width: 100%;
     background-color: bisque;
 
 }
@@ -31,7 +31,7 @@ main{
 }
 
 section{
-    width: 790px;
+    width: 30%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;

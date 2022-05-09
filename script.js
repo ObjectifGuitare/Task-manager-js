@@ -37,6 +37,10 @@ function formatDate(unpolishedDate)
 
 function displayTasks(arr)
 {
+    for (let fig of document.querySelectorAll("figure"))
+    {
+        fig.remove();
+    }
     for (const task of arr) {
         let figure = document.createElement("figure");
         let caption = document.createElement("figcaption");
@@ -69,12 +73,27 @@ function displayTasks(arr)
 
 displayTasks(tasks);
 
-// function addTask()
-// {
+function addTask()
+{
+    let statusInput = document.body.querySelector(".statusInput")
+    let nameInput = document.body.querySelector(".nameInput")
+    let descriptionInput = document.body.querySelector(".descriptionInput")
+    let dateInput = document.body.querySelector(".dateInput")
 
-// }
+    // console.log(statusInput.innerHTML);
 
-// document.body.querySelector(".submit").addEventListener("click", addTask);
+    let newTask = {
+        status: statusInput.value,
+        name: nameInput.value,
+        description: descriptionInput.value,
+        date: dateInput.value
+    }
+    tasks.push(newTask);
+    // console.log(tasks)
+    displayTasks(tasks);
+}
+
+document.body.querySelector(".submitBtn").addEventListener("click", () =>{addTask()});
 
 
 // function sortTasks()
@@ -112,12 +131,12 @@ function toggleModal(){
 
 
 /*switch*/
-const upcoming = document.querySelector('.Upcoming');
-const progress = document.querySelector('.pregress')
+// const upcoming = document.querySelector('.Upcoming');
+// const progress = document.querySelector('.pregress')
 
-mouv.addEventListener('click',mouv)
-function change(){
-    let mouv = document.getElementsByClassName('click');
+// mouv.addEventListener('click',mouv)
+// function change(){
+//     let mouv = document.getElementsByClassName('click');
     
 
-}
+// }
