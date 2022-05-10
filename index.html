@@ -1,75 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script defer src="script.js"></script>
-    <link rel="stylesheet" href="style.css">
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Document</title>
+		<script defer src="script.js"></script>
+		<link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Project Management</h1>
-        <p class="ordre">
-            <label for="filtre" id="filtre2">filtre :</label><br>
-            <select name="filtre1" id="filtre">
-                <option value="croissant">ordre croissant</option>
-                <option value="decroissant">ordre decroissant</option>
-                <option value="bistoufly">one again a bistoufly</option>
-            </select>
-        </p>
-    </header>
-    <main>
-        
-     <div class="modal-container">
-        <div class="overlay modal-trigger"></div>
-        <div class="modal">
-            <button class="close-modal modal-trigger">x</button>
-                <h3>Formulaire :</h3>
-                <form class="formulaire" method="post" action="script.js">
-                    <p>Status : <br>
-                        <input type="checkbox" name="Upcoming" class="checkbox">Upcoming <br>
-                        <input type="checkbox" name="In Progress" class="checkbox">In Progress <br>
-                        <input type="checkbox" name="Done" class="checkbox">Done <br>
+		<header>
+				<h1>Project Management</h1>
+				<p class="ordre">
+						<label for="filtre" id="filtre2">filtre :</label><br>
+						<select name="filtre1" id="filtre">
+								<option value="croissant">ordre croissant</option>
+								<option value="decroissant">ordre decroissant</option>
+								<option value="bistoufly">one again a bistoufly</option>
+						</select>
+				</p>
+		</header>
+		<main>
 
-                    <p>Nom : <input type="text" required class="nameInput"></p>
-                    
-                    <p>Description : <input type="text" required class="descriptionInput"></p>
-                    
-                    <p>Date : <input type="date" placeholder="YYYY-MM-DD" required class="dateInput"></p>
+		 <div class="modal-container">
+				<div class="overlay modal-trigger"></div>
+				<div class="modal">
+						<button class="close-modal modal-trigger">x</button>
+								<h3>Formulaire :</h3>
+								<form class="formulaire" method="post" action="script.js">
+										<p>Status : <br>
+												<input type="checkbox" name="Upcoming" class="checkbox UpcomingCheckbox">Upcoming <br>
+												<input type="checkbox" name="In Progress" class="checkbox inProgressCheckbox">In Progress <br>
+												<input type="checkbox" name="Done" class="checkbox DoneCheckbox">Done <br>
 
-                    <p><input type="button" value="Envoyer" class="submitBtn">
-                </form>
-        </div>
-    </div>
-        
-    
-        <section class="Upcoming">
-            <h2>Upcoming</h2>
-            <div class="Project UpcomingProject">
-                <p class="click" onclick="change" style="cursor: pointer ;">Switch</p>
-            </div>
-            <button class="modal-btn modal-trigger">+ ADD new Project</button>
-        </section>
+										<p>Nom : <input type="text" required class="nameInput"></p>
 
-        <section class="Progress">
-            <h2>In Progress</h2>
-            <div class="Project ProgressProject">
-                <p class="click">Switch</p>
-            </div>
-            <button class="modal-btn modal-trigger">+ ADD new Project</button>
-        </section>
+										<p>Description : <input type="text" required class="descriptionInput"></p>
 
-        <section class="Done">
-            <h2>Done</h2>
-            <div class="Project DoneProject"> 
-                <p class="click">???</p>
-            </div>
-            <button class="modal-btn modal-trigger">+ ADD new Project</button>
-        </section>
-    
-    </main>
-    
+										<p>Date : <input type="date" placeholder="YYYY-MM-DD" required class="dateInput"></p>
+
+										<p><input type="button" value="Envoyer" class="submitBtn">
+								</form>
+				</div>
+		</div>
+
+
+				<section class="Upcoming">
+						<h2>Upcoming</h2>
+						<div class="Project UpcomingProject">
+								<p class="click" onclick="change" style="cursor: pointer ;">Switch</p>
+						</div>
+						<button class="modal-btn modal-trigger">+ ADD new Project</button>
+				</section>
+
+				<section class="Progress">
+						<h2>In Progress</h2>
+						<div class="Project ProgressProject">
+								<p class="click">Switch</p>
+						</div>
+						<button class="modal-btn modal-trigger">+ ADD new Project</button>
+				</section>
+
+				<section class="Done">
+						<h2>Done</h2>
+						<div class="Project DoneProject">
+								<p class="click">???</p>
+						</div>
+						<button class="modal-btn modal-trigger">+ ADD new Project</button>
+				</section>
+
+		</main>
+
 </body>
 </html>
