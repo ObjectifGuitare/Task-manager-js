@@ -48,12 +48,13 @@ section{
     
 }
 
-.Project{
+figure{
     background-color: white;
     border-radius: 10px;
-    margin: 10px;
     
 }
+
+
 .click{
     text-align: end;
     padding: 1px;
@@ -141,6 +142,7 @@ h2{
     margin-bottom: 10px;
 }
 .modal-btn{
+    
     border: 1px;
     text-align: left;
     font-size: 15px;
