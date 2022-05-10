@@ -141,5 +141,18 @@ h3{
     font-size: 30px;
 }
 
-/*drag and drop*/
+/*filtre*/
+.ordre{
+    position: absolute;
+    top: 100px;
+    text-align: center;    
+}
+
+#filtre{
+    background-color:darksalmon;
+    font-size: 18px;
+}
+#filtre2{
+    font-size: 25px;
+}
 
