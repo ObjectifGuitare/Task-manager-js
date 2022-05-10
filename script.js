@@ -75,12 +75,12 @@ displayTasks(tasks);
 
 function addTask()
 {
-    let statusInput = document.body.querySelector(".statusInput")
+    let statusInput = document.body.querySelectorAll(".checkbox")
     let nameInput = document.body.querySelector(".nameInput")
     let descriptionInput = document.body.querySelector(".descriptionInput")
     let dateInput = document.body.querySelector(".dateInput")
 
-    // console.log(statusInput.innerHTML);
+    document.body.querySelector(".checkbox").addEventListener("click", ()=>{console.log(statusInput)})
 
     let newTask = {
         status: statusInput.value,
