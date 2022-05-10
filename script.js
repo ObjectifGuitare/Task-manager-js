@@ -57,7 +57,8 @@ function displayTasks(arr)
         more.innerHTML = task.description;
         dueDate.innerHTML = task.date;
         dueDate.innerHTML = formatDate(task.date);
-        // will have to transform this date in a function
+        
+        dueDate.setAttribute("class", "taskDate")
         
         if (task.status === "upcoming"){
             document.body.querySelector(".UpcomingProject").appendChild(figure);
