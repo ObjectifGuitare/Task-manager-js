@@ -30,8 +30,12 @@ function formatDate(unpolishedDate)
     let futureEpoch = futureDate.getTime();
     let days = Math.ceil((futureEpoch - currentEpoch) / (1000 * 60 * 60 * 24));
 
-    if(days < 2)
+    if(days < 2 && days >= 0)
         return `${days} day left`;
+    else if(days < 0 && days >= -1)
+        return `${days} day ago`;
+    else if(days < -1)
+        return `${days} days ago`;
     return `${days} days left`;
 }
 
