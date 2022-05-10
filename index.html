@@ -19,6 +19,7 @@
         <div class="modal">
             <button class="close-modal modal-trigger">x</button>
                 <h3>formualaire :</h3>
+
                 <form class="formulaire" method="post" action="script.js">
                     <p>status : <br>
                         <input type="radio">Upcoming <br>
@@ -26,12 +27,14 @@
                         <input type="radio">Done <br>
 
                     <p>name : <input type="text"></p>
+           
+                    <p class="description">description : <input type="text" class="descriptionInput"></p>
                     
-                    <p>description : <input type="text"></p>
-                    
+
                     <p>date : <input type="text" >yyyy-mm-dd</p>
 
                     <button class="submit">submit</button>
+
                 </form>
         </div>
     </div>
@@ -39,7 +42,7 @@
     
         <section class="Upcoming">
             <h2>Upcoming</h2>
-            <div class="Project">
+            <div class="Project UpcomingProject">
                 <p class="click" onclick="change" style="cursor: pointer ;">Switch</p>
             </div>
             <button class="modal-btn modal-trigger">+ ADD new Project</button>
@@ -47,7 +50,7 @@
 
         <section class="Progress">
             <h2>In Progress</h2>
-            <div class="Project">
+            <div class="Project ProgressProject">
                 <p class="click">Switch</p>
             </div>
             <button class="modal-btn modal-trigger">+ ADD new Project</button>
@@ -55,7 +58,7 @@
 
         <section class="Done">
             <h2>Done</h2>
-            <div class="Project"> 
+            <div class="Project DoneProject"> 
                 <p class="click">???</p>
             </div>
             <button class="modal-btn modal-trigger">+ ADD new Project</button>
