@@ -21,17 +21,17 @@
                 <h3>formualaire :</h3>
                 <form class="formulaire" method="post" action="script.js">
                     <p>status : <br>
-                        <input type="radio">Upcoming <br>
-                        <input type="radio">In Progress <br>
-                        <input type="radio">Done <br>
+                        <input type="checkbox" name="Upcoming" >Upcoming <br>
+                        <input type="checkbox" name="In Progress" >In Progress <br>
+                        <input type="checkbox" name="Done" >Done <br>
 
-                    <p>name : <input type="text"></p>
+                    <p>nom : <input type="text" required></p>
                     
-                    <p>description : <input type="text"></p>
+                    <p>description : <input type="text" required></p>
                     
-                    <p>date : <input type="text" >yyyy-mm-dd</p>
+                    <p>date : <input type="date" placeholder="YYYY-MM-DD" required></p>
 
-                    <button class="submit">submit</button>
+                    <p><input type="button" value="Envoyer">
                 </form>
         </div>
     </div>
