@@ -33,9 +33,9 @@ function formatDate(unpolishedDate)
     if(days < 2 && days >= 0)
         return `${days} day left`;
     else if(days < 0 && days >= -1)
-        return `${days} day ago`;
+        return `${Math.abs(days)} day ago`;
     else if(days < -1)
-        return `${days} days ago`;
+        return `${Math.abs(days)} days ago`;
     return `${days} days left`;
 }
 
