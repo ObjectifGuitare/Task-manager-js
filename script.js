@@ -79,11 +79,24 @@ function addTask()
     let nameInput = document.body.querySelector(".nameInput")
     let descriptionInput = document.body.querySelector(".descriptionInput")
     let dateInput = document.body.querySelector(".dateInput")
-
-    document.body.querySelector(".checkbox").addEventListener("click", ()=>{console.log(statusInput)})
+    let i = 0;
+    
+    for (const box of statusInput) {
+        if (box.checked)
+        {
+            if (i == 0)
+                statusInput = "upcoming";
+            if (i == 1)
+                statusInput = "doing";
+            if (i == 2)
+                statusInput = "done";
+        }
+        i++;
+    }
+    console.log(statusInput);
 
     let newTask = {
-        status: statusInput.value,
+        status: statusInput,
         name: nameInput.value,
         description: descriptionInput.value,
         date: dateInput.value
