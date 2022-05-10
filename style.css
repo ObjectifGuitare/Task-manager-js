@@ -93,6 +93,7 @@ h2{
     top: 0;
     width: 100vh;
     height: 100vh;
+    z-index: 1;
     
 }
 .modal-container.active{
