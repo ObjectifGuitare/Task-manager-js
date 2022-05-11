@@ -114,14 +114,59 @@ function addTask()
 document.body.querySelector(".submitBtn").addEventListener("click", () =>{addTask()});
 
 
-function sortTasks(e)
+let select = document.body.querySelector("#sort");
+
+
+function sortByNameUp(arr)
 {
-    console.log(e);
-    if (e.target.value === "Choose")
-        console.log("bonjour");
+    let sortable = [];
+
+    for (let task of arr)
+        sortable.push(task.name)
+    console.log(sortable.sort())
+    return sortable;
 }
 
-let select = document.body.querySelector("#sort");
+function sortByNameDown(arr)
+{
+    let newArr = [];
+    let temp = {};
+    let i = 0;
+    let j = 0;
+
+    temp = arr[i]
+    while(i < arr.length)
+    {
+        while(temp.name > arr[i].name)
+            temp = arr[i++];
+        newArr.push(temp);
+        j++;
+        i = j;
+    }
+    return newArr;
+}
+
+function sortByDate(arr)
+{
+    let newArr = [];
+
+
+    return newArr;
+}
+
+function sortTasks()
+{
+    console.log(select.selectedIndex)
+    if (select.selectedIndex == 0)
+        return ;
+    else if(select.selectedIndex == 1)
+        displayTasks(sortByNameUp(tasks));
+    else if(select.selectedIndex == 2)
+        displayTasks(sortByNameDown(tasks));
+    else if(select.selectedIndex == 3)
+        displayTasks(sortByDate(tasks));
+}
+
 select.addEventListener("change", sortTasks)
 
 
