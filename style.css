@@ -2,6 +2,7 @@ body{
     display: flex;
     width: 100%;
     background-color: bisque;
+    flex-wrap: wrap;
 
 }
 
@@ -19,8 +20,7 @@ h1{
 
 main{
     display: flex;
-    padding-top: 15%;
-    
+    padding-top: 200px;
     
     
     
@@ -30,22 +30,31 @@ main{
     position:relative;
 }
 
+.boxe{
+    display: flex;
+    position: absolute;
+    left: 12%;
+    right: 12%;
+}
+
 section{
-    width: 30%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     text-align: center; 
-    margin: 1%;
+    margin:1%;
+    
     
 }
 
-.Project{
+figure{
     background-color: white;
     border-radius: 10px;
-    margin: 10px;
     
 }
+
+
 .click{
     text-align: end;
     padding: 1px;
@@ -59,6 +68,8 @@ h2{
 .Upcoming{
     background-color:rgb(209, 205, 205);
     border: 1px solid ;
+    
+    
 }
 .Progress{
     background-color: rgb(209, 205, 205);
@@ -67,6 +78,7 @@ h2{
 .Done{
     background-color: rgb(209, 205, 205);
     border: 1px solid;
+    
 }
 
 
@@ -82,6 +94,8 @@ h2{
     top: 0;
     width: 100vh;
     height: 100vh;
+    z-index: 1;
+    
 }
 .modal-container.active{
     display: block;
@@ -128,6 +142,7 @@ h2{
     margin-bottom: 10px;
 }
 .modal-btn{
+    
     border: 1px;
     text-align: left;
     font-size: 15px;

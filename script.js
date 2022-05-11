@@ -3,13 +3,13 @@
 let tasks = [
     {
         status: "upcoming",
-        name: "me gratter le dos",
+        name: "me gratter le ventre",
         description: "utiliser mon gratte dos pour me gratter le dos afin de me gratter le dos",
         date: "2022-12-25"
     },
     {
         status: "done",
-        name: "me gratter le ventre",
+        name: "me gratter le dos",
         description: "utiliser mon gratte ventre pour me gratter le ventre afin de me gratter le ventre",
         date: "2022-05-10"
     },
@@ -120,10 +120,24 @@ let select = document.body.querySelector("#sort");
 function sortByNameUp(arr)
 {
     let sortable = [];
+    let newArr = [];
+    let i = 0;
+    let j = 0;
 
     for (let task of arr)
-        sortable.push(task.name)
-    console.log(sortable.sort())
+        sortable.push(task.name);
+    sortable.sort();
+    console.log(arr[j].name);
+    while(i < sortable.length)
+    {
+        if(sortable[i] === arr[j].name)
+        {
+            newArr.push(arr[j++]);
+            j = 0
+            i++;
+        }
+        j++;
+    }
     return sortable;
 }
 
@@ -156,7 +170,6 @@ function sortByDate(arr)
 
 function sortTasks()
 {
-    console.log(select.selectedIndex)
     if (select.selectedIndex == 0)
         return ;
     else if(select.selectedIndex == 1)
