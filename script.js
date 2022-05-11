@@ -114,20 +114,16 @@ function addTask()
 document.body.querySelector(".submitBtn").addEventListener("click", () =>{addTask()});
 
 
-// function sortTasks()
-// {
+function sortTasks(e)
+{
+    console.log(e);
+    if (e.target.value === "Choose")
+        console.log("bonjour");
+}
 
-// }
+let select = document.body.querySelector("#sort");
+select.addEventListener("change", sortTasks)
 
-// document.body.querySelector(".sort").addEventListener("click", sortTasks)
-
-
-// function filterTasks()
-// {
-    
-// }
-
-// document.body.querySelector(".filter").addEventListener("click", filterTasks)
 
 
 
